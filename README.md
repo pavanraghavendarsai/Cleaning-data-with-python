@@ -54,6 +54,31 @@ Before exporting to `data/processed/`, automated assertions verified:
 4. 100% referential integrity across all parent-child foreign keys using `.isin().all()`.
 
 ## 6. How to Run Locally
-1. Install dependencies:
+
+1. Clone the repository and move into the project folder:
+
+   ```bash
+   git clone https://github.com/pavanraghavendarsai/Cleaning-data-with-python.git
+   cd Cleaning-data-with-python
+   ```
+
+2. (Optional) Create and activate a virtual environment:
+
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate      # Windows: .venv\Scripts\activate
+   ```
+
+3. Install dependencies (requires pandas 2.0 or later):
+
    ```bash
    pip install -r requirements.txt
+   ```
+
+4. Run the cleaning script from the project root folder:
+
+   ```bash
+   python src/data_cleaning.py
+   ```
+
+5. The cleaned files are saved to `data/processed/`.
